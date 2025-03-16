@@ -3,19 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package Modelos;
-import Interfaces.Animal;
+
+import Interfaces.Vehiculo;
+
 /**
  *
  * @author marbellymoreno
  */
-public class Gato implements Animal<String> {
+public class Coche implements Vehiculo<String> {
+
     @Override
-    public String hacerSonido() {
-        return "El gato maulla: Meaw Meaw.";
+    public String Arrancar() {
+        return "El coche arranca y quema gasolina.";
     }
 
     @Override
-    public String mover() {
-        return "El gato salta de forma agil.";
+    public String Detener() {
+        return "El coche frena y el motor descansa.";
     }
 }
