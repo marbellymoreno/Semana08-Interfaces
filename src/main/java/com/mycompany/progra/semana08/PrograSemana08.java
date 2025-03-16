@@ -5,14 +5,17 @@
 package com.mycompany.progra.semana08;
 
 import Interfaces.Animal;
+import Interfaces.Geometrica;
 import Interfaces.Pago;
 import Interfaces.Vehiculo;
 import Modelos.Bicicleta;
+import Modelos.Circulo;
 import Modelos.Coche;
 import Modelos.Gato;
 import Modelos.PagoConEfectivo;
 import Modelos.PagoConTarjeta;
 import Modelos.Perro;
+import Modelos.Rectangulo;
 
 /**
  *
@@ -33,5 +36,12 @@ public class PrograSemana08 {
         //Pago
         Pago<String> PagoConEfectivo = new PagoConEfectivo();
         Pago<String> PagoConTarjeta = new PagoConTarjeta();
+        
+        //Geométrica
+        double radio = 4;
+        Geometrica<Double> circulo = new Circulo(radio);
+        double ancho = 5;
+        double alto = 3;
+        Geometrica<Double> rectangulo = new Rectangulo(ancho, alto);
     }
 }
