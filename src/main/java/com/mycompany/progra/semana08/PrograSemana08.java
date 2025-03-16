@@ -81,5 +81,83 @@ public class PrograSemana08 {
         //Descontable
         Descontable<String> descuentoPorcentaje = new DescuentoPorcentaje();
         Descontable<String> descuentoFijo = new DescuentoFijo();
+        
+        //Perro
+        System.out.println("Comportamiento del Perro:");
+        System.out.println(perro.hacerSonido());
+        System.out.println(perro.mover());
+        //Gato
+        System.out.println("\nComportamiento del Gato:");
+        System.out.println(gato.hacerSonido());
+        System.out.println(gato.mover());
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Coche
+        System.out.println("\nComportamiento del Coche:");
+        System.out.println(coche.Arrancar());
+        System.out.println(coche.Detener());
+        //Bicicleta
+        System.out.println("\nComportamiento de la bicicleta:");
+        System.out.println(bicicleta.Arrancar());
+        System.out.println(bicicleta.Detener());
+
+        System.out.println("\n--------------------------------------------------");
+        
+        // Pago con Tarjeta
+        System.out.println("\nPago con targeta:");
+        System.out.println(PagoConTarjeta.ProcesarPago(25.75));
+        // Pago en Efectico
+        System.out.println("\nPago en efectivo:");
+        System.out.println(PagoConEfectivo.ProcesarPago(5.99));
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Circulo
+        System.out.println("\nLos datos del circulo son:");
+        System.out.println("Area: " + circulo.Area());
+        System.out.println("Perímetro: " + circulo.Perimetro());
+        //Rectangulo
+        System.out.println("\nLos datos del rectangulo son:");
+        System.out.println("Area: " + rectangulo.Area());
+        System.out.println("Perímetro: " + rectangulo.Perimetro());
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Desarrollador
+        System.out.println("\n" + desarrollador.Trabajar());
+        //Diseñador
+        System.out.println("\n" + diseñador.Trabajar());
+
+        System.out.println("\n--------------------------------------------------");
+        //Orenar nuemros usando sort
+        System.out.println("\n" + listaNumeros.Ordenar());
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Persona
+        System.out.println("\n" + persona.Comer());
+        //Animal
+        System.out.println("\n" + animal.Comer());
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Correo electrónico
+        System.out.println("\n" + correoElectronico.EnviarNotificacion());
+        //SMS
+        System.out.println("\n" + sms.EnviarNotificacion());
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Comparar
+        Producto smartPhone = new Producto("Smartphone", 800.99);
+        System.out.println("\n" + laptop.Comparar(smartPhone));
+
+        System.out.println("\n--------------------------------------------------");
+
+        //Descuento por Porcentaje
+        System.out.println("\n" + descuentoPorcentaje.CalcularDesceunto(smartPhone.getPrecio()));
+        //Descuento Fijo
+        System.out.println("\n" + descuentoFijo.CalcularDesceunto(smartPhone.getPrecio()) + "\n");
     }
 }
