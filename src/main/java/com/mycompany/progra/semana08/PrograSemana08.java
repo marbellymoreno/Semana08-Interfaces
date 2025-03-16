@@ -6,12 +6,14 @@ package com.mycompany.progra.semana08;
 
 import Interfaces.Animal;
 import Interfaces.Geometrica;
+import Interfaces.Notificacion;
 import Interfaces.Pago;
 import Interfaces.Trabajador;
 import Interfaces.Vehiculo;
 import Modelos.Bicicleta;
 import Modelos.Circulo;
 import Modelos.Coche;
+import Modelos.CorreoElectronico;
 import Modelos.Desarrollador;
 import Modelos.Diseñador;
 import Modelos.Gato;
@@ -19,6 +21,7 @@ import Modelos.PagoConEfectivo;
 import Modelos.PagoConTarjeta;
 import Modelos.Perro;
 import Modelos.Rectangulo;
+import Modelos.SMS;
 
 /**
  *
@@ -50,5 +53,9 @@ public class PrograSemana08 {
         //Trabajador
         Trabajador<String> desarrollador = new Desarrollador();
         Trabajador<String> diseñador = new Diseñador();
+        
+        //Notificacion
+        Notificacion<String> correoElectronico = new CorreoElectronico();
+        Notificacion<String> sms = new SMS();
     }
 }
