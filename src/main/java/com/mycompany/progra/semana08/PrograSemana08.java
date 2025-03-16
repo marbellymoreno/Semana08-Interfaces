@@ -5,10 +5,13 @@
 package com.mycompany.progra.semana08;
 
 import Interfaces.Animal;
+import Interfaces.Pago;
 import Interfaces.Vehiculo;
 import Modelos.Bicicleta;
 import Modelos.Coche;
 import Modelos.Gato;
+import Modelos.PagoConEfectivo;
+import Modelos.PagoConTarjeta;
 import Modelos.Perro;
 
 /**
@@ -26,5 +29,9 @@ public class PrograSemana08 {
         //Vehiculo
         Vehiculo<String> coche = new Coche();
         Vehiculo<String> bicicleta = new Bicicleta();
+        
+        //Pago
+        Pago<String> PagoConEfectivo = new PagoConEfectivo();
+        Pago<String> PagoConTarjeta = new PagoConTarjeta();
     }
 }
