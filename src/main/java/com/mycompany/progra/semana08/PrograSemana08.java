@@ -6,6 +6,7 @@ package com.mycompany.progra.semana08;
 
 import Interfaces.Alimentacion;
 import Interfaces.Animal;
+import Interfaces.ComparableObjeto;
 import Interfaces.Geometrica;
 import Interfaces.Notificacion;
 import Interfaces.Ordenable;
@@ -25,6 +26,7 @@ import Modelos.PagoConEfectivo;
 import Modelos.PagoConTarjeta;
 import Modelos.Perro;
 import Modelos.Persona;
+import Modelos.Producto;
 import Modelos.Rectangulo;
 import Modelos.SMS;
 
@@ -69,6 +71,9 @@ public class PrograSemana08 {
         //Alimentacion
         Alimentacion<String> persona = new Persona();
         Alimentacion<String> animal = new Animales();
+
+        //Comparable
+        ComparableObjeto<String> laptop = new Producto("Laptop", 1200.50);
 
     }
 }
