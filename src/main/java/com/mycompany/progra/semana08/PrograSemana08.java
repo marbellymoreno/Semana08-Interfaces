@@ -7,6 +7,7 @@ package com.mycompany.progra.semana08;
 import Interfaces.Alimentacion;
 import Interfaces.Animal;
 import Interfaces.ComparableObjeto;
+import Interfaces.Descontable;
 import Interfaces.Geometrica;
 import Interfaces.Notificacion;
 import Interfaces.Ordenable;
@@ -19,6 +20,8 @@ import Modelos.Circulo;
 import Modelos.Coche;
 import Modelos.CorreoElectronico;
 import Modelos.Desarrollador;
+import Modelos.DescuentoFijo;
+import Modelos.DescuentoPorcentaje;
 import Modelos.Diseñador;
 import Modelos.Gato;
 import Modelos.ListaNumeros;
@@ -74,6 +77,9 @@ public class PrograSemana08 {
 
         //Comparable
         ComparableObjeto<String> laptop = new Producto("Laptop", 1200.50);
-
+        
+        //Descontable
+        Descontable<String> descuentoPorcentaje = new DescuentoPorcentaje();
+        Descontable<String> descuentoFijo = new DescuentoFijo();
     }
 }
