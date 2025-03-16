@@ -4,6 +4,7 @@
 
 package com.mycompany.progra.semana08;
 
+import Interfaces.Alimentacion;
 import Interfaces.Animal;
 import Interfaces.Geometrica;
 import Interfaces.Notificacion;
@@ -11,6 +12,7 @@ import Interfaces.Ordenable;
 import Interfaces.Pago;
 import Interfaces.Trabajador;
 import Interfaces.Vehiculo;
+import Modelos.Animales;
 import Modelos.Bicicleta;
 import Modelos.Circulo;
 import Modelos.Coche;
@@ -22,6 +24,7 @@ import Modelos.ListaNumeros;
 import Modelos.PagoConEfectivo;
 import Modelos.PagoConTarjeta;
 import Modelos.Perro;
+import Modelos.Persona;
 import Modelos.Rectangulo;
 import Modelos.SMS;
 
@@ -62,5 +65,10 @@ public class PrograSemana08 {
         
         //Ordenable
         Ordenable<String> listaNumeros = new ListaNumeros();
+        
+        //Alimentacion
+        Alimentacion<String> persona = new Persona();
+        Alimentacion<String> animal = new Animales();
+
     }
 }
