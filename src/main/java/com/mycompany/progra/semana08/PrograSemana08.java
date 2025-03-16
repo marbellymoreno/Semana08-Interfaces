@@ -7,10 +7,13 @@ package com.mycompany.progra.semana08;
 import Interfaces.Animal;
 import Interfaces.Geometrica;
 import Interfaces.Pago;
+import Interfaces.Trabajador;
 import Interfaces.Vehiculo;
 import Modelos.Bicicleta;
 import Modelos.Circulo;
 import Modelos.Coche;
+import Modelos.Desarrollador;
+import Modelos.Diseñador;
 import Modelos.Gato;
 import Modelos.PagoConEfectivo;
 import Modelos.PagoConTarjeta;
@@ -43,5 +46,9 @@ public class PrograSemana08 {
         double ancho = 5;
         double alto = 3;
         Geometrica<Double> rectangulo = new Rectangulo(ancho, alto);
+        
+        //Trabajador
+        Trabajador<String> desarrollador = new Desarrollador();
+        Trabajador<String> diseñador = new Diseñador();
     }
 }
