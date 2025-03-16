@@ -7,6 +7,7 @@ package com.mycompany.progra.semana08;
 import Interfaces.Animal;
 import Interfaces.Geometrica;
 import Interfaces.Notificacion;
+import Interfaces.Ordenable;
 import Interfaces.Pago;
 import Interfaces.Trabajador;
 import Interfaces.Vehiculo;
@@ -17,6 +18,7 @@ import Modelos.CorreoElectronico;
 import Modelos.Desarrollador;
 import Modelos.Diseñador;
 import Modelos.Gato;
+import Modelos.ListaNumeros;
 import Modelos.PagoConEfectivo;
 import Modelos.PagoConTarjeta;
 import Modelos.Perro;
@@ -57,5 +59,8 @@ public class PrograSemana08 {
         //Notificacion
         Notificacion<String> correoElectronico = new CorreoElectronico();
         Notificacion<String> sms = new SMS();
+        
+        //Ordenable
+        Ordenable<String> listaNumeros = new ListaNumeros();
     }
 }
